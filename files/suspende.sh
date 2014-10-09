@@ -11,7 +11,7 @@
 # La idea es utilizar este script como tarea cron de forma que se ejecute cada cierto tiempo
 
 # Si hay un usuario logueado en el terminal :0, no hacemos nada y finalizamos
-if [ $(/usr/bin/w | /bin/grep ":0" | /bin/grep "tty" | /usr/bin/cut -f1 -d" ") ]; then
+if [ $(/usr/bin/who | /bin/grep ":0" | /bin/grep "tty" | /usr/bin/cut -f1 -d" ") ]; then
    exit 0
 fi
 
