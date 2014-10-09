@@ -7,7 +7,7 @@ class puppet-suspende::install {
   cron { suspende:
     command => "/usr/local/sbin/suspende.sh",
     user    => root,
-    minute  => '*/15',
+    minute  => '*/30',
   }
 }
 
